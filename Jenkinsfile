@@ -28,7 +28,7 @@ pipeline {
    stage('Deploy Image') {
       steps{
         sh '''
-        echo "adminuser:your_password" | docker login 127.0.0.1:5000 --username adminuser --password-stdin
+        echo "adminuser:12081994" | docker login 127.0.0.1:5000 --username adminuser --password-stdin
         docker tag testapp 127.0.0.1:5000/mguazzardo/testapp
         docker push 127.0.0.1:5000/mguazzardo/testapp   
         '''
