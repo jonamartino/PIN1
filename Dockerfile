@@ -9,4 +9,5 @@ EXPOSE 3000
 
 ADD . /app
 
-CMD ["node", "index"]
+# Iniciar un bash interactivo para pruebas
+CMD ["/bin/sh"]
